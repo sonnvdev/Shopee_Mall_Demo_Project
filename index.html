@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Mall</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                     <ul class="header__navbar-list">
+                         <li class="header__navbar-item">Shopee Mall</li>
+                         <li class="header__navbar-item">
+                            <a href="" class="header__navbar-icon header__navbar-icon-face"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="header__navbar-icon header__navbar-icon-insta"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                     </ul>
+     
+                     <ul class="header__navbar-list">
+                         <li class="header__navbar-item">
+                             <a href="" class="header__navbar-list-link">
+                                <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo</a>
+                         </li>
+                         <li class="header__navbar-item">
+                             <a href="" class="header__navbar-list-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp</a>
+                         </li>
+                         <li class="header__navbar-item header__navbar-item-bold header__navbar-item--separate">Đăng ký</li>
+                         <li class="header__navbar-item header__navbar-item-bold">Đăng nhập</li>
+                     </ul>
+                </nav> 
+
+                <div class="header__search">
+                    <div class="header__search-logo">
+                        <svg enable-background="new 0 0 48 48" viewBox="0 0 48 48" x="0" y="0" class="header__search-logo"><path fill="#fff" d="M44.4,11.5C44.4,11.5,44.4,11.5,44.4,11.5l-9.9,0C34.3,5.1,29.7,0,24,0S13.7,5.1,13.5,11.5H3.6v0c-0.5,0-0.9,0.4-0.9,0.9c0,0,0,0,0,0.1h0l1.4,30.9c0,0.1,0,0.2,0,0.3c0,0,0,0,0,0.1l0,0.1l0,0c0.2,2.2,1.8,3.9,3.9,4l0,0h31.4c0,0,0,0,0,0c0,0,0,0,0,0h0.1l0,0c2.2-0.1,3.9-1.8,4.1-4l0,0l0,0c0,0,0,0,0-0.1c0-0.1,0-0.1,0-0.2l1.5-31h0c0,0,0,0,0,0C45.3,11.9,44.9,11.5,44.4,11.5z M24,2.8c4.1,0,7.5,3.9,7.6,8.7H16.4C16.5,6.7,19.9,2.8,24,2.8z M31.9,35.8c-0.3,2.3-1.7,4.2-3.9,5.1c-1.2,0.5-2.8,0.8-4.1,0.7c-2-0.1-3.9-0.6-5.6-1.4c-0.6-0.3-1.6-1-2.3-1.5c-0.2-0.1-0.2-0.3-0.1-0.5c0.2-0.2,0.8-1.2,0.9-1.3c0.1-0.2,0.4-0.2,0.6-0.1c0,0,0.2,0.2,0.3,0.2c1.7,1.3,3.8,2.3,6.2,2.4c3,0,5.2-1.4,5.6-3.5c0.4-2.3-1.4-4.3-4.9-5.4c-1.1-0.3-3.9-1.5-4.5-1.8c-2.5-1.4-3.6-3.3-3.4-5.6c0.2-3.2,3.2-5.6,7-5.6c1.8,0,3.5,0.4,5,1c0.6,0.2,1.6,0.8,2,1.1c0.3,0.2,0.2,0.4,0.1,0.6c-0.2,0.2-0.6,0.9-0.8,1.2c-0.1,0.2-0.3,0.2-0.5,0.1c-1.9-1.3-3.9-1.7-5.7-1.8c-2.6,0.1-4.6,1.6-4.7,3.7c0,1.9,1.4,3.3,4.5,4.3C29.9,29.6,32.3,32,31.9,35.8z"></path></svg>
+                    </div>
+
+                    <div class="header__search-main">
+                        <input type="text" class="header__search-main-input" placeholder="Tìm kiếm">
+                        <div class="header__search-main-option">
+                            <span class="header__search-main-selection">Vietnam</span>
+                            <i class="header__search-main-option-icon fa-solid fa-sort-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-legion">Thailand</li>
+                                <li class="header__search-option-legion">Malaysia</li>
+                                <li class="header__search-option-legion">Singapore</li>
+                                <li class="header__search-option-legion">Philipines</li>
+                            </ul>
+                        </div>
+                        <button class="header_search-main-btn">
+                            <i class="header_search-main-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__search-cart">
+                        <div class="header__search-cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row add">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="category-heading-icon fa-solid fa-list"></i>Danh mục</h3>
+            
+                            <ul class="category-list">
+                                <li class="category-items category-items--active">
+                                    <a href="#" class="category-items-link">Giày thể thao</a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="#" class="category-items-link">Giày tenis</a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="#" class="category-items-link">Giày chạy bộ</a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="#" class="category-items-link">Giày đá bóng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home__filter">
+                            <span class="home__filter-label">Sắp xếp theo</span>
+                            <button class="home__filter-label-btn btn">Phổ biến</button>  
+                            <button class="home__filter-label-btn btn">Mới nhất</button>  
+                            <button class="home__filter-label-btn btn">Bán chạy</button>  
+
+                            <div class="select__input">
+                                <span class="select__input-label">Giá</span>
+                                <i class="select__input-icon fa-solid fa-sort-down"></i>
+
+                                <ul class="select__input-list">
+                                    <li class="select__input-item">
+                                        <a href="" class="select__input-link">Thấp đến Cao</a>
+                                    </li>
+
+                                    <li class="select__input-item">
+                                        <a href="" class="select__input-link">Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <!---
+                            <div class="home__filter-page">
+                                <span class="home__filter-page-number">
+                                    <span class="home__filter-page-number-curent">1</span>/14
+                                </span>
+                                <div class="home__filter-page-control">
+                                    <a href="" class="home__filter-page-btn">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </a>
+                                    <a href="" class="home-__ilter-page-btn">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        -->
+                        </div>
+
+                        <div class="home__product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134201-23020-nh7q47i22rnv7d);"></div>
+                                        <h4 class="home__product-item-name">Giày chạy bộ nam nữ thể thao Jogarbola Vn31</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">750.000đ</span>
+                                            <span class="home__product-item-price-new">609.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Jogarbola</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">19%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkrszhxptyv4cf);"></div>
+                                        <h4 class="home__product-item-name">Giày tập gym nữ Jogarbola đế cao chính hãng 2258</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">645.000đ</span>
+                                            <span class="home__product-item-price-new">595.0000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Jogarbola</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">8%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhiqq2d6d18lb3);"></div>
+                                        <h4 class="home__product-item-name">iày thể thao chạy bộ nam nữ Jogarbola VN32, giày đi bộ nam siêu nhẹ</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">695.000đ</span>
+                                            <span class="home__product-item-price-new">665.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Jogarbola</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">4%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhyhhvrntku9b0);"></div>
+                                        <h4 class="home__product-item-name">Giày chạy bộ thể thao nam Nexgen NX-2251 chính hãng</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-new">365.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Nextgen</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj81vlhddvd80d);"></div>
+                                        <h4 class="home__product-item-name">Giày cầu lông nam XPD BM110 chính hãng</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">899.000đ</span>
+                                            <span class="home__product-item-price-new">809.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Jogarbola</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">10%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-22100-lknp4srj16iv41);"></div>
+                                        <h4 class="home__product-item-name">Giày đá bóng nam sân cỏ nhân tạo JOGARBOLA KOHA 2103</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">695.000đ</span>
+                                            <span class="home__product-item-price-new">668.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Jogarbola</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">4%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-22100-pvm8ufymw5iv11);"></div>
+                                        <h4 class="home__product-item-name">Giày tennis nam thể thao Jogarbola 21006</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">705.000đ</span>
+                                            <span class="home__product-item-price-new">689.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Jogarbola</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">8%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpivoi2xdtm765);"></div>
+                                        <h4 class="home__product-item-name">Giày cầu lông nam Promax đế chống trơn trượt</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-new">175.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Promax</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-23020-7w5ll29n8zmve8);"></div>
+                                        <h4 class="home__product-item-name">Giày cầu lông nam Promax đế kếp chống trơn trượt, chống thấm nước 220681</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">560.000đ</span>
+                                            <span class="home__product-item-price-new">525.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Promax</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">6%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lk5hfv6r7pxec1);"></div>
+                                        <h4 class="home__product-item-name">Giày đá bóng nam Jogarbola Colorlux 2.0 Ultra sân cỏ nhân tạo, sân cỏ tự nhiên</h4>
+                                        <div class="home__product-item-price">
+                                            <span class="home__product-item-price-old">690.000đ</span>
+                                            <span class="home__product-item-price-new">679.000đ</span>
+                                        </div>
+                                        <div class="home__product-item-action">
+                                            <span class="home__product-item-like">
+                                                <i class="home__product-item-like-none fa-regular fa-heart"></i>
+                                                <i class="home__product-item-like-liked fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home__product-item-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home__product-item-origin">
+                                            <span class="home__product-item-brand">Jogarbola</span>
+                                            <span class="home__product-item-nation">Việt Nam</span>
+                                        </div>
+                                        
+                                        <div class="home__product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="home__product-item-saleoff">
+                                            <div class="home__product-item-percent">3%</div>
+                                            <span class="home__product-item-label">Giảm</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__heading-list">
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">Điều khoản</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__heading-list">
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Đơn vị vận chuyển</h3>
+                        <ul class="footer__heading-list">
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">SPX</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">J&T</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">Giaohangnhanh</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link">Giaohangtietkiem</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__heading-list">
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link"><i class="footer__heading-list-items-link-icon fa-brands fa-facebook-f"></i>Facebook</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                            </li>
+                            <li class="footer__heading-list-items">
+                                <a href="" class="footer__heading-list-items-link"><i class="fa-brands fa-linkedin"></i>Linkein</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Tải ứng dụng</h3>
+                        <div class="footer__heading-download">
+                            <img src="https://down-vn.img.susercontent.com/file/a5e589e8e118e937dc660f224b9a1472" alt="download_qr_code" class="footer__heading-download-qr">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!--
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                    
+                    <div class="auth__form-signin">
+                        <div class="auth__form-header">
+                            <h3 class="auth__form-heading">
+                                Đăng ký
+                            </h3>
+                            <span class="auth__form-switch">
+                                Đăng nhập
+                            </span>
+                        </div> 
+
+                        <div class="auth__form-input">
+                            <input type="text" class="auth__form-group" placeholder="Email hoặc Số điện thoại">
+                        </div>
+                        <div class="auth__form-input">
+                            <input type="password" class="auth__form-group" placeholder="Mật khẩu">
+                        </div>
+                        <div class="auth__form-input">
+                            <input type="password" class="auth__form-group" placeholder="Nhập lại mật khẩu">
+                        </div>
+
+                        <div class="auth__form-policy">
+                            <p class="auth__form-text">Đồng ý
+                                <a href="" class="auth__form-link">Điều khoản và 
+                                <a href="" class="auth__form-link">Chính sách</a>
+                            </p>
+                        </div>
+
+                        <div class="auth__form-control">
+                            <button class="auth__form-back">TRỞ LẠI</button>
+                            <button class="auth__form-sign">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="auth__form-signin">
+                        <div class="auth__form-header">
+                            <h3 class="auth__form-heading">
+                                Đăng nhập
+                            </h3>
+                            <span class="auth__form-switch">
+                                Đăng ký
+                            </span>
+                        </div> 
+
+                        <div class="auth__form-input">
+                            <input type="text" class="auth__form-group" placeholder="Email hoặc Số điện thoại">
+                        </div>
+                        <div class="auth__form-input">
+                            <input type="password" class="auth__form-group" placeholder="Mật khẩu">
+                        </div>
+
+                        <div class="auth__form-aisde">
+                            <div class="auth__form-help">
+                                <a href="" class="auth__form-help-link">Quên mật khẩu</a>
+                                <span class="auth__form-help-separate"></span>
+                                <a href="" class="auth__form-help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+
+                        <div class="auth__form-control">
+                            <button class="auth__form-back">TRỞ LẠI</button>
+                            <button class="auth__form-sign">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
